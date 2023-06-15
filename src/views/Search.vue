@@ -23,20 +23,19 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: 'Search',
   data() {
     return {
       searchTerm: '',
-      searchPerformed: false, // New data property
-    };
+      searchPerformed: false, 
+    }
   },
   computed: {
     searchResults() {
       return this.$store.state.searchResults;
-    },
+    }
   },
   methods: {
     search() {
@@ -56,26 +55,23 @@ export default {
       return;
     }
     this.$store.dispatch('borrowBook', book);
-    },
-  },
-};
+    }
+  }
+}
 </script>
 
 <style>
 .search-view {
   padding: 20px;
 }
-
 .search-form {
   margin-bottom: 20px;
 }
-
 .search-form input {
   padding: 10px;
   width: 200px;
   margin-right: 10px;
 }
-
 .search-form button {
   padding: 10px 20px;
   background-color: #0E2954;
@@ -83,20 +79,17 @@ export default {
   border: none;
   cursor: pointer;
 }
-
 .search-results {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 }
-
 .book-card {
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
   padding: 10px;
 }
-
 .book-cover {
   max-width: 100%;
   height: auto;

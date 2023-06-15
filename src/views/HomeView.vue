@@ -39,16 +39,15 @@ export default {
       return;
     }
     this.$store.dispatch('borrowBook', book);
-  }   
-  },
+    }   
   }
-
+}
 </script>
 
 <style>
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as desired */
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   margin: 40px;
 }
@@ -56,23 +55,20 @@ export default {
 .book-card {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
+  align-items: center;
+  justify-content: center; 
   border: 1px solid #ccc;
   padding: 10px;
-  width: 200px; /* Adjust the width as desired */
+  width: 200px; 
 }
-
 .book-cover {
   max-width: 150px;
   max-height: 200px;
   object-fit: cover;
 }
-
 .book-details {
   flex-grow: 1;
 }
-
 button {
   margin-top: 10px;
   color: white;

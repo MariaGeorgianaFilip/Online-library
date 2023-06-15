@@ -37,9 +37,10 @@ export default {
   methods: {
     toggleCart() {
       this.isCartVisible = !this.isCartVisible;
-    },
-  },
+    }
+  }
 };
+
 </script>
 
 <style>
@@ -50,18 +51,15 @@ export default {
   padding: 10px;
   background-color: #ECF8F9;
 }
-
 h1 {
   font-size: 40px;
   margin: 0;
   color: #0E2954;
 }
-
 .main-nav {
   text-align: center;
   margin: 40px auto;
 }
-
 .main-nav a {
   display: inline-block;
   text-decoration: none;
@@ -69,16 +67,13 @@ h1 {
   font-size: 20px;
   color: black;
 }
-
 .cart {
   position: relative;
   cursor: pointer;
 }
-
 .cart i {
   font-size: 24px;
 }
-
 .cart-count {
   position: absolute;
   top: -16px;
@@ -92,11 +87,10 @@ h1 {
   background-color:#0E2954;
   color: white;
   font-size: 12px;
-  font-weight: bold; /* Add this line to make the number bold */
+  font-weight: bold; 
 }
-
 .cart-dropdown {
-  background-color: #f2f2f2; /* Change the background color of the dropdown */
+  background-color: #f2f2f2; 
   padding: 10px;
   position: absolute;
   top: 40px;
@@ -105,21 +99,17 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 .cart-dropdown ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .cart-dropdown li {
   margin-bottom: 8px;
 }
-
 .cart-dropdown li:last-child {
   margin-bottom: 0;
 }
-
 .cart-dropdown li.and-more {
   font-weight: bold;
   color: #888;
